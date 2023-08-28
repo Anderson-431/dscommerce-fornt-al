@@ -12,7 +12,7 @@ export default function App() {
       <Route path="/" element={<ClientHome />}>   
       <Route index element={<Catalog />} ></Route>
       <Route path="catalog" element={<Catalog />} ></Route>
-      <Route path="product-details" element={<ProductDatails />} ></Route>
+      <Route path="product-details/:productId" element={<ProductDatails />} ></Route>
       </Route>
     </Routes>
   </BrowserRouter>

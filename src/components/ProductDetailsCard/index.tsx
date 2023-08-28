@@ -1,5 +1,4 @@
 import "./styles.css";
-import computerImg from '../../assets/SmartTV.jpg'
 import ProductCategory from "../ProductCategory";
 import { ProductDTO } from "../../models/product";
 
@@ -11,7 +10,7 @@ export default function ProductDetailsCard({ product }: Props) {
   return (
     <div className="dsc-card dsc-mb20">
       <div className="dsc-product-details-top dsc-line-bottom">
-        <img src={computerImg} alt= {product.name} />
+        <img src={product.imgUrl} alt= {product.name} />
       </div>
       <div className="dsc-product-details-bottom">
         <h3> {product.price.toFixed(2)} </h3>
